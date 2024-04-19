@@ -1,11 +1,11 @@
 import os
 from git import Repo
-import datetime as dt
-tgl = dt.datetime.now().strftime("%y%m%d_%H%M%S")
-os.chdir('../training')
+#import datetime as dt
+#tgl = dt.datetime.now().strftime("%y%m%d_%H%M%S")
+os.chdir('../trainjkt48')
 #import shutil
 #shutil.make_archive('HEINZO', 'zip', '/content/images')
-full_local_path = "/content/training"
+full_local_path = "/content/trainjkt48"
 
 #backupname = "/content/training/HEINZO.zip"
 #backup = ('/content/training/H' + str(tgl) + '.zip')
@@ -14,7 +14,7 @@ full_local_path = "/content/training"
 
 repo = Repo(full_local_path)
 repo.git.add("-A")
-repo.index.commit("user_fakes")
+repo.index.commit("user_t2i")
 
 #repo = Repo(full_local_path)
 origin = repo.remote(name="origin")
@@ -28,7 +28,6 @@ origin.push()
 
 #repo.git.remote.remove.origin
 
-#repo.git.remote.add.origin('https://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@github.com/heinzo666/downloadroop.git')
 
 #repo.git.push.origin.main
 
